@@ -10,3 +10,7 @@ export const showMessage = (setMessage) => {
   // Update the content using state
   setMessage("New content");
 };
+
+export const me = (a) => {
+  return `${a+1} + 3`;
+}

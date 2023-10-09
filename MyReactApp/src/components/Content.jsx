@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { showAlert, checkAge, showMessage } from "../assets/js/content.js"; // Update the import
+import { showAlert, checkAge, showMessage, me } from "../assets/js/content.js"; // Update the import
 import "../assets/styles/body.css";
 
 export const Content = () => {
@@ -24,10 +24,12 @@ export const Content = () => {
       <br/>
       <div className="test">{message}</div>
       <br/>
-      <br/>
       <div>
-        <ul>{peopleList}</ul>
+        <h2>List</h2>
+          <ul>{peopleList}</ul>
       </div>
+      <br/>
+      <h1>{me(2)}</h1>
     </>
   );
 };

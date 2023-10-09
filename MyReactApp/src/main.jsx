@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client"; // new API introduced in React 18
 import { NavBar } from "./components/navBar.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Content } from "./components/Content.jsx";
+import { PasswordCheck } from "./components/PasswordCheck.jsx";
 
 import "./index.css";
 
@@ -21,6 +22,7 @@ root.render(
   <>
     <NavBar />
     <Content />
+    <PasswordCheck />
     <Footer />
   </>
 );
